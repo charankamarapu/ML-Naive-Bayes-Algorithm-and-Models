@@ -1,6 +1,6 @@
 # ML-Naive-Bayes-Algorithm-and-Models
 
-## INTRODUCTION
+### INTRODUCTION
 - Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable.
 - Generally we have features for a particular class , they may be co-related and have something in common but in the context of this  algorithm we assume that all features are completely independent of each other.
 - Let us look at the formula of Bayes' theorem with single feature
@@ -27,28 +27,28 @@
 When we provide the all the features  of a particular object the algorithm uses the formula considering those features only and give the probability of the classes to which the object belongs to.\
 For better understanding give a look at the video - https://www.youtube.com/watch?v=Q8l0Vip5YUw
 
-## When should we use Naive Bayes..?
+### When should we use Naive Bayes..?
 - Naive Bayes is used for classification problems.
 - It is used when the training is less.
 - It gives good result if the features are really appeared to be independent.
 - Naive Bayes is an eager learning classifier and it is sure fast. Thus, it could be used for making predictions in real time.
 - aive Bayes classifiers mostly used in text classification (due to better result in multi class problems and independence rule) have higher success rate as compared to other algorithms. As a result, it is widely used in Spam filtering (identify spam e-mail) and Sentiment Analysis (in social media analysis, to identify positive and negative customer sentiments)
 
-## PROS
+### PROS
 - It is easy and fast to predict class of test data set. It also perform well in multi class prediction.
 - When assumption of independence holds, a Naive Bayes classifier performs better compare to other models like logistic regression and you need less training data.
 - It perform well in case of categorical input variables compared to numerical variable(s). For numerical variable, normal distribution is assumed (bell curve, which is a strong assumption).
 
-## CONS
+### CONS
 - If categorical variable has a category (in test data set), which was not observed in training data set, then model will assign a 0 (zero) probability and will be unable to make a prediction. This is often known as “Zero Frequency”. To solve this, we can use the smoothing technique. One of the simplest smoothing techniques is called Laplace estimation.
 - Another limitation of Naive Bayes is the assumption of independent predictors. In real life, it is almost impossible that we get a set of predictors which are completely independent.
 
-## Tips to improve the model
+### Tips to improve the model
 - If continuous features do not have normal distribution, we should use transformation or different methods to convert it in normal distribution.
 - Remove correlated features, as the highly correlated features are voted twice in the model and it can lead to over inflating importance.
 - If test data set has zero frequency issue, apply smoothing techniques “Laplace Correction” to predict the class of test data set.
 
-## Types of Naive Bayes models
+### Types of Naive Bayes models
 - Gaussian: It is used in classification and it assumes that features follow a normal distribution.\
   https://www.youtube.com/watch?v=H3EjCKtlVog \
   https://iq.opengenus.org/gaussian-naive-bayes/
